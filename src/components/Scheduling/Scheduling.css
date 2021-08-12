@@ -1,0 +1,46 @@
+.scheduling {
+    background-color: #fbfbfb;
+    padding: 60px 0;
+}
+.scheduling .scheduling-heading {
+    /* border: 1px solid red; */
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.scheduling .scheduling-heading p {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.scheduling .scheduling-heading p span {
+    color: var(--primary-color);
+}
+.scheduling .patners {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.scheduling .patners img {
+    height: 25px;
+    width: 140px;
+}
+
+@media screen and (max-width: 768px) {
+    .scheduling .scheduling-heading p {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .scheduling .patners {
+        width: 95%;
+    }
+    .scheduling .patners img {
+        width: 100px;
+    }
+}
+@media screen and (max-width: 568px) {
+    .scheduling .patners img {
+        width: 70px;
+    }
+}

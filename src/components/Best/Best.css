@@ -1,0 +1,41 @@
+.working .best {
+    /* border: 1px solid red; */
+    width: 70%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.working .best-heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.working .best .best-text {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 500;
+}
+.working .best .best-text span {
+    display: block;
+}
+
+@media screen and (max-width: 740px) {
+    .working .best {
+        /* border: 1px solid red; */
+        width: 90%;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+    .working .best-heading {
+        font-size: 2.4rem;
+        font-weight: 800;
+    } 
+    .working .best .best-text {
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 400;
+        color: black;
+    }
+}
+

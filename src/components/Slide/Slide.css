@@ -1,0 +1,158 @@
+.working .slide {
+    margin-bottom: 70px;
+    width: 70%;
+    margin: auto;
+}
+.working .slide .component {
+    margin-bottom: 30px;
+    /* border: 1px solid cornflowerblue; */
+    height: 500px;
+}
+.working .slide .controls {
+    /* border: 1px solid rgb(126, 123, 122); */
+    width: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid cyan; */
+}
+.working .slide .controls button {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(224, 223, 223);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.slide  .slide-comp {
+    display: flex;
+    height: 100%;
+}
+.slide .slide-comp .slide-image {
+    width: 80%;
+    height: 90%;
+}
+.slide .slide-comp .slide-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+.slide .slide-comp .component-right .teams {
+    /* border: steelblue 1px solid; */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.slide .slide-comp .component-right .teams p:first-child {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.slide .slide-comp .component-right .teams p:last-child {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: all 500ms;
+}
+.slide .slide-comp .component-right .teams:hover p:last-child {
+    background-color: var(--primary-color);
+    margin-left: 30px;
+}
+
+.slide .slide-comp .component-right .teams p:last-child span {
+    color: white;
+}
+.slide .slide-comp .component-right .teams p:last-child span i {
+    display: block;
+}
+.slide .slide-comp .component-right .deco {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+.slide  .slide-comp .component-left {
+    width: 50%;
+    /* border: deepskyblue 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide  .slide-comp .component-right {
+    width: 50%;
+    /* border: springgreen 1px solid; */
+    padding: 0 50px;
+    position: relative;
+}
+.slide  .slide-comp .component-right .sec-head {
+    text-transform: uppercase;
+    color: rgb(63, 63, 63);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.slide  .slide-comp .component-right .main-head {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.slide  .slide-comp .component-right .name {
+    color: steelblue;
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+    
+}
+/*------------------------Bitly---------------------------*/
+.working .slide .bitly {
+    /* background-color: darkseagreen; */
+    /* border: 1px solid black; */
+    height: 100%;
+}
+/*------------------------Bitly---------------------------*/
+
+/*------------------------Studies---------------------------*/
+.working .slide .studies {
+    height: 100%;
+}
+/*------------------------Studies---------------------------*/
+
+@media screen and (max-width: 1300px) {
+    .working .slide {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .slide  .slide-comp .component-right .main-head {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .working .slide .component {
+        height: auto;
+    }
+    .slide  .slide-comp {
+        flex-direction: column;
+        height: auto;
+    }
+    .slide .slide-comp .component-left {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .slide .slide-comp .component-right {
+        width: 100%;
+    }
+    .slide .slide-comp .slide-image {
+        width: 70% !important;
+    }
+    .slide  .slide-comp .component-right .main-head {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,128 @@
+.working .action {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.working .action-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.working .action-heading h1 {
+    font-weight: 800;
+    font-size: 4rem;
+}
+.working .action-video {
+    border: 1px solid turquoise;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+.working .action-video img {
+    height: 100%;
+    width: 65%;
+    border-radius: 40px;
+    border: 2px solid grey;
+}
+.working .action-video .play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+.working .action-video .play span i{
+    color: white;
+}
+
+.working .action .list {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.working .action .list-item {
+    width: 250px;
+    /* border: 2px solid crimson; */
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 50px;
+}
+.working .action .list-item::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.233);
+    position: absolute;
+    top: 28px;
+    left: 13px;
+}
+.working .action .list-item.list-3 .heading {
+    margin-bottom: 25px;
+}
+.working .action .list-item .heading {
+    margin-bottom: 15px;
+}
+.working .action .list-item .heading p {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.working .action .list-item .p-body {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    letter-spacing: 0.03rem;
+    color: rgba(1, 1, 15, 0.76);
+}
+.working .action .list-item .heading p span {
+    display: block;
+}
+.working .action .list-item  .number {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    color: white;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .working .action {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 50px;
+    } 
+}
+@media screen and (max-width: 924px) {
+    .working .action .list {
+        flex-direction: column;
+        align-items: center;
+    } 
+    .working .action .list-item {
+        margin-bottom: 80px;
+    } 
+}
+@media screen and (max-width: 600px) {
+    .working .action-video img {
+        width: 100% !important;
+        border-radius: 0;
+    }
+    .working .action-heading h1 {
+        font-weight: 700;
+        font-size: 2.7rem;
+    }   
+}

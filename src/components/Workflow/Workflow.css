@@ -1,0 +1,99 @@
+.working .workflow {
+    /* border: 1px solid red; */
+    width: 70%;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.working .workflow-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.working .workflow-text {
+    width: 50%;
+    /* border: 1px solid cornflowerblue; */
+}
+.working .workflow-text .text-heading {
+    margin-bottom: 35px;
+}
+.working .workflow-text .text-heading .sub-head {
+    color: rgb(27, 27, 27);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+.working .workflow-text .text-heading .main-head {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.working .workflow-text .text-heading .main-head span {
+    display: block;
+}
+.working .workflow-text .body-text {
+    line-height: 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.781);
+}
+.working .workflow-display {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.working .workflow-display img {
+    display: inline-block;
+    width: 450px;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 1300px) {
+    .working .workflow {
+        /* border: 1px solid red; */
+        width: 90%;
+    }
+    .working .workflow-display img {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .working .workflow-text .text-heading .main-head {
+        font-size: 2.0rem;
+    }
+    .working .workflow-display img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .working .workflow-wrapper {
+        flex-direction: column-reverse;
+    }
+    .working .workflow-text {
+        width: 100%;
+    }
+    .working .workflow-display {
+        width: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .working .workflow-display img {
+        width: 100%;
+        height: auto;
+    }
+    .working .workflow-text .text-heading .main-head {
+        font-size: 1.8rem;
+    }
+    .working .workflow-text .text-heading .main-head span {
+        display: inline;
+    }
+    .working .workflow-text .text-heading .sub-head {
+        font-size: 0.9rem;
+    }
+    .working .workflow-text .text-heading .sub-head {
+        font-size: 0.9rem;
+    }
+}
